@@ -13,7 +13,7 @@ public class Coin{
   The coin constructor that defines what happens when a coin object is made.
   When a new is made it gets flipped
   */
-  public coin(){
+  public Coin(){
     flip();
   }
 
@@ -23,7 +23,7 @@ public class Coin{
   The flip method assigns a randomly chosen calue to the face of the coin
   */
   public void flip(){
-    face = (int)(math.random() * 2);
+    face = (int)(Math.random() * 2);
   }
 
   /*

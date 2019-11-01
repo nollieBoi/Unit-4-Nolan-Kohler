@@ -4,17 +4,20 @@ public class Car{
   private double mpg;
   private double tankSize;
   private double amtFuel;
+  private double miles;
+  private final double EMPTY = 0.0;
 
   /*
   Constructor for the car. Initializes the instance variables for the car
   */
 
-  public Car(String carMake, String carModel, double carMpg, double carTankSize){
+  public Car(String carMake, String carModel, double carMpg, double carTankSize, int carMiles){
     make = carMake;
     model = carModel;
     mpg = carMpg;
     tankSize = carTankSize;
     amtFuel = tankSize;
+    miles = carMiles;
   }
 
   public String toString(){
@@ -24,6 +27,7 @@ public class Car{
     result += "MPG: " + mpg + "\n";
     result += "Tank size: " + tankSize + "\n";
     result += "Amount of fuel: " + amtFuel + "\n";
+    result += "Miles on your car: " + miles + "\n";
     return result;
   }
 
@@ -47,17 +51,23 @@ public class Car{
     return amtFuel;
   }
 
-  public void drive(double miles){
-    if(miles <= (mpg * amtFuel)){
-      fuel = miles/mpg;
-    }else
-      fuel = 0.0;
+  public double getMiles(){
+    return miles;
   }
 
-  public void refuel(double gal){
-    if(fuel + gal <= tank){
-      fuel += gal;
+  public void drive(double dist){
+    if(dist <= (mpg * amtFuel)){
+      amtFuel -= dist/mpg;
+      miles += dist;
     }else
-      fuel = tank;
+      amtFuel = EMPTY;
+      miles += (mpg * amtFuel);
+  }
+
+  public void addFuel(double gal){
+    if(amtFuel + gal <= tankSize){
+      amtFuel += gal;
+    }else
+      amtFuel = tankSize;
   }
 }

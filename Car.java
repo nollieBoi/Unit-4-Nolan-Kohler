@@ -59,9 +59,10 @@ public class Car{
     if(dist <= (mpg * amtFuel)){
       amtFuel -= dist/mpg;
       miles += dist;
-    }else
+    }else{
       amtFuel = EMPTY;
       miles += dist;
+    }
   }
 
   public void addFuel(double gal){

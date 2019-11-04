@@ -61,7 +61,7 @@ public class Car{
       miles += dist;
     }else
       amtFuel = EMPTY;
-      miles += (mpg * amtFuel);
+      miles += dist;
   }
 
   public void addFuel(double gal){

@@ -29,7 +29,7 @@ public class CarTester{
 
     joeCar.drive(MILES_DRIVEN); //drive car for 132.8 miles
 
-    System.out.println("Drove " + MILES_DRIVEN + "miles: " + "\n" + joeCar);
+    System.out.println("Drove " + MILES_DRIVEN + " miles: " + "\n" + joeCar);
 
     joeCar.addFuel(ADDED_FUEL); //add 2.5 gallons of fuel to carTankSize
 

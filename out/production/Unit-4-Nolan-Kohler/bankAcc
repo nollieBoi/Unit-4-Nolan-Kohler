@@ -1,0 +1,16 @@
+properties:
+-amount of money
+-owner name
+-account Number
+-amount interest
+-pin Number
+-account login
+
+behaviors:
+-withdraw
+-deposit
+-check it
+-transfer
+-create new accounts
+-close it
+-interest

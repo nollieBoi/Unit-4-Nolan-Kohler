@@ -6,6 +6,7 @@ public class bankAccTester{
     String name = "User";
     String email = "";
     String password = "";
+    System.out.println(accNum);
     int choice = "";
     System.out.println("Welcome to Better Than JoeBank!");
     System.out.println("Please login....... >_< (email and then password)");
@@ -15,11 +16,12 @@ public class bankAccTester{
     if(email.equals(email) && password.equals(password)){
       System.out.println("\n" + "Welcome " + name + "!" + "\n");
       System.out.println("What would you like to do?" + "\n" +
-      "1. Change name" + "\n" + "2. Check checkings and savings" + "\n"
+      "1. Change name" + "\n" + "2. View account" + "\n"
       + "3. Deposit money into savings" + "\n" +
       "4. Withdraw money from savings" + "\n" +
       "5. Transfer from savings to checkings" + "\n" + "6. Sign out");
       choice = scan.nextInt();
+      Bank bank = new Bank();
     }
 
     if(choice = 1){

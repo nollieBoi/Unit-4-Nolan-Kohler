@@ -11,9 +11,6 @@ public class bankAcc{
     String result = "";
     result += "Checking account: " +
   }
-  public String getName(){
-    return name;
-  }
   public double getMoney(){
     return money;
   }

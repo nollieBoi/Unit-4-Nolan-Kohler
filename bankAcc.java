@@ -38,7 +38,7 @@ public class bankAcc{
     public void deposit(double addMon){
     money += addMon;
   }
-  public void withrdraw(double useMon){
+    public void withrdraw(double useMon){
     money -= useMon;
   }
 }

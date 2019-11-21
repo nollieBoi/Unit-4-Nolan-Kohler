@@ -15,7 +15,7 @@ public class bankGUI extends Application {
         private TextField name;
         private TextField pin;
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage stage) {
         Button wordUpButt = new Button("Create Account");
         //wordUpButt.setOnAction(this::wordUpPress);
         Button depoButt = new Button("Deposit money");
@@ -29,10 +29,14 @@ public class bankGUI extends Application {
 
         FlowPane tayK = new FlowPane(wordUpButt, depoButt, withdrawButt, statusButt, interestButt);
         tayK.setAlignment(Pos.CENTER);
-        tayK.setHgap(30);
+        tayK.setHgap(20);
+        tayK.setVgap(10);
         tayK.setStyle("-fx-background-color: pink");
 
         Scene scene = new Scene(tayK, 300, 400);
 
+        stage.setScene(scene);
+        stage.show();
     }
+
 }

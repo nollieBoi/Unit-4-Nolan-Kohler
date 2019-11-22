@@ -47,3 +47,7 @@ public class Counter extends Application {
         countText.setText("Count: " + count);
     }
 }
+
+//USE GRID PANE
+//GRIDPANE GRID = NEW GRID
+//GRIDPANE NEWGRID = NEW GRID(GRID, 0, 0)

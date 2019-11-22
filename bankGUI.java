@@ -1,4 +1,5 @@
 import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -14,6 +15,8 @@ public class bankGUI extends Application {
     }
         private TextField name;
         private TextField pin;
+        private double balance;
+        private final double DEPOSIT = 200.00;
     @Override
     public void start(Stage stage) {
         Button wordUpButt = new Button("Create Account");
@@ -38,5 +41,7 @@ public class bankGUI extends Application {
         stage.setScene(scene);
         stage.show();
     }
+        private void wordUpPress(ActionEvent event){
 
+        }
 }

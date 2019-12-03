@@ -3,7 +3,7 @@ public class bankAcc{
   private String name;
   private String pin;
   private double money;
-  public Bank(String newAccNum, String newName, String newPin, double newMoney){
+  public bankAcc(String newAccNum, String newName, String newPin, double newMoney){
     accNum = newAccNum;
     name = newName;
     pin = newPin;
@@ -11,10 +11,10 @@ public class bankAcc{
   }
   public String toString(){
     String result = "";
-    result += "Account number: " + accNum;
-    result += "Name: " + name;
-    result += "Pin number: " + pin;
-    result += "Money in the ish: " + money;
+    result += "Account number: " + accNum + "\n";
+    result += " Name: " + name + "\n";
+    result += " Pin number: " + pin + "\n";
+    result += " Money in the ish: " + money + "\n";
     return result;
 
   }
@@ -38,7 +38,11 @@ public class bankAcc{
     public void deposit(double addMon){
     money += addMon;
   }
-    public void withrdraw(double useMon){
+    public void withdraw(double useMon){
     money -= useMon;
+  }
+  public void addInterest(){
+    double interest = 1.02;
+    money = money * interest;
   }
 }

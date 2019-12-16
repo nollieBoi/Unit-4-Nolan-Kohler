@@ -1,7 +1,7 @@
 public class DieComputer {
     Die dC1 = new Die();
     Die dC2 = new Die();
-    private int score = 0;
+    private int score;
     private int roundScore = 0;
     private Boolean pass = false;
 
@@ -38,5 +38,10 @@ public class DieComputer {
             score += roundScore;
             System.out.println("Computer Score is: " + score);
         }
+        pass = false;
+    }
+
+    public int getScore() {
+        return score;
     }
 }

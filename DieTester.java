@@ -44,7 +44,6 @@ public class DieTester {
                 System.out.println("Score is: " + score);
                 comp.play();
             }
-            pass = false;
         }
         }
 

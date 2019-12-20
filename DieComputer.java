@@ -44,4 +44,10 @@ public class DieComputer {
     public int getScore() {
         return score;
     }
+
+    public Boolean getPass() {
+        return pass;
+    }
 }
+
+/////might need to break down play method into smaller methods
